@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 @MappedSuperclass
 public abstract class AbstractNamedEntity extends AbstractBaseEntity {
 
+    //строка является каким-либо символом
     @NotBlank
     @Size(min = 2, max = 100)
     @Column(name = "name", nullable = false)
